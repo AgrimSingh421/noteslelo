@@ -1,0 +1,112 @@
+.home {
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 60px;
+}
+
+.home p {
+  font-size: 20px;
+}
+
+.home a {
+  font-size: 30px;
+  color: white;
+  background-color: rgb(0, 150, 150);
+  padding: 15px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 1px solid rgb(0, 100, 100);
+  box-shadow: 7px 6px 0px 0px rgba(0, 100, 100, 1);
+  position: relative;
+  top: 30px;
+  animation: blink 1s linear infinite, intro5 7s 1;
+}
+
+.home a:active {
+  box-shadow: none;
+  top: 36px;
+  left: 7px;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+ul li button {
+  font-size: 20px;
+  background: none;
+  border: none;
+  font-family: "Fira Code";
+  cursor: pointer;
+}
+
+ul.chapters {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: rgba(0, 100, 100, 1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer > span {
+  text-align: center;
+  color: white;
+}
+
+.version {
+  position: fixed;
+  bottom: 2px;
+  right: 5px;
+  color: white;
+  z-index: 5;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 25px;
+  }
+  .version {
+    right: 10px;
+  }
+}
+
+@keyframes blink {
+  0% {
+    color: white;
+    background-color: rgb(0, 150, 150);
+  }
+  50% {
+    color: white;
+    background-color: rgb(0, 120, 120);
+  }
+  100% {
+    color: white;
+    background-color: rgb(0, 150, 150);
+  }
+}
